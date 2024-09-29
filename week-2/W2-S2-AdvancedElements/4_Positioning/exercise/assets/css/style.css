@@ -93,11 +93,13 @@ footer {
 /* Get in Touch (incorrect position) */
 .get-in-touch {
     /* TODO need to fix this to bottom and right */
-
+    position: fixed;
+    top: 95%;
+    left: 95%;
     /* Incorrect position */
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    /* position: absolute;*/
+    /* top: 50%; */
+    /* left: 50%; */
     transform: translate(-50%, -50%);
     z-index: 100;
     
@@ -111,4 +113,10 @@ footer {
 }
 
 /* TASK 1: Make the navigation sticky at the top */
+.main-nav{
+   position:sticky;
+   top:0%;
+}
 /* TASK 2: Fix the "Get in Touch" button in the bottom-right */
+
+

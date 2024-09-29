@@ -59,7 +59,8 @@ button:hover {
 
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels */
-
+.phone-label::before{content: "📞";}
+.email-label::before{content: "✉️";}
 
 /* Styling the Terms and Conditions Link */
 .terms-link {
@@ -69,3 +70,9 @@ button:hover {
 }
 
 /* Add hover and visited states for the link */
+.terms-link:visited {
+    color: purple;
+}
+.terms-link:hover {
+    color: #4cae4c;
+}

@@ -56,6 +56,7 @@ img {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
+
 }
 
 .product {
@@ -65,7 +66,41 @@ img {
     margin: 20px;
     text-align: center;
     border: 2px solid black;
+    transition: transform 0.2s;
+    animation: myscale 2s infinite;
+
     /* Old styling */
-   
-    /* Add New styling here */
 }
+
+.product:hover {
+
+    transition: transform 0.2s;
+    animation: myspin 2s infinite;
+}
+@keyframes myscale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes myspin {
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }    
+}
+   /* Add New styling here */

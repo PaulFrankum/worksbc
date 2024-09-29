@@ -1,9 +1,18 @@
 /* Basic Page Styles */
+/* define varibles*/
+:root {
+    --primary-color: #d90000;
+    --secondary-color: white;
+    --main-font: Arial, sans-serif;
+    --main-font-size: 1rem;
+
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
+    font-size:   var(--main-font-size: 1rem;)
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     /* Hardcoded white */
     color: #000000;
     /* Hardcoded black */
@@ -11,7 +20,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #d90000;
+    background-color:var(--primary-color);
     /* Hardcoded red */
     padding: 15px;
     text-align: center;
@@ -30,7 +39,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--secondary-color);
     /* Hardcoded white */
     font-weight: bold;
 }
@@ -38,9 +47,9 @@ nav ul li a {
 /* Header Section */
 header {
     text-align: center;
-    background-color: #d90000;
+    background-color: var(--primary-color);
     /* Hardcoded red */
-    color: #ffffff;
+    color: var(--secondary-color);
     /* Hardcoded white */
     padding: 40px 0;
 }
@@ -59,7 +68,7 @@ header h1 {
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     /* Hardcoded white */
 }
 
@@ -74,9 +83,9 @@ img {
     padding: 20px;
     background-color: #fff3f3;
     /* Light red background */
-    border: 2px solid #d90000;
+    border: 2px solid var(--primary-color);
     /* Hardcoded red border */
-    color: #d90000;
+    color: (--primary-color);
     /* Hardcoded red text */
     text-align: center;
 }
@@ -91,7 +100,7 @@ img {
 }
 
 a.option {
-    color: #d90000;
+    color: (--primary-color);
     /* Hardcoded red */
     text-decoration: none;
     width: 50%;

@@ -15,7 +15,7 @@ header {
 
 header h1 {
     /* Add margin to the top and bottom of the heading */
-    margin: 0.5em 0;
+    margin: 1.5em 0;
 }
 
 nav ul {
@@ -64,8 +64,16 @@ img {
     padding: 20px;
     margin: 20px;
     text-align: center;
-    border: 2px solid black;
+
     /* Old styling */
-   
+
+
     /* Add New styling here */
+    border-radius:15px;
+    border: 2px solid green;
+    padding: 10px;
+    box-shadow: 5px 10px grey;
+}
+.button {
+    border-radius:25px;   
 }
