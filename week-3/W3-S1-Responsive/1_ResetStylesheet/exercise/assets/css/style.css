@@ -1,15 +1,14 @@
 /* Main stylesheet */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-}
-
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
 }
 
 main p {

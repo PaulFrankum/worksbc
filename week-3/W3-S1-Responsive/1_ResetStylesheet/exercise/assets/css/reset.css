@@ -78,6 +78,11 @@ section,
 summary,
 time,
 mark,
+button,
+input,
+select,
+textarea,
+
 audio,
 video {
     margin: 0;
@@ -124,6 +129,7 @@ q:after {
     content: '';
     content: none;
 }
+
 
 table {
     border-collapse: collapse;
