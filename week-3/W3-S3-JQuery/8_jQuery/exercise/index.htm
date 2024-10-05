@@ -7,6 +7,7 @@
     <title>jQuery CSS Manipulation</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- TODO: Add in the jQuery script  -->>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -41,11 +42,22 @@
             });
 
             // TODO: Increase font size for the second box
+            $('#box2').click(function () {
+                $('#box2').css('font-size', '48pt');
+            });
 
             // TODO: Change background color for the third box
-
+            $('#box3').click(function () {
+                $('#box3').css('background-color', 'red');
+            });
             // TODO: Italicize text for all the text elements
-
+            $('#box4').click(function () {
+                $('#box4').css('font-style', 'italic');
+                $('#box4').css('background-color', 'yellow');
+                $('#box3').css('background-color', 'red');
+                $('#box2').css('font-size', '48pt');
+                $('#box1').css('color', 'red');                
+            });
         });
     </script>
 
