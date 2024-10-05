@@ -7,6 +7,12 @@ header {
     color: #FFD700 !important;
     /* Gold */
 }
+header h1 {color: Black;
+font-size: 6rem;
+background-color: yellow}
+
+header p {color:black;
+background-color: red;}
 
 /* Footer Custom Colors */
 footer {
@@ -18,30 +24,32 @@ footer {
 
 /* Button Custom Colors */
 .btn-primary {
-    background-color: #FF4500 !important;
+    background-color: red !important;
     /* OrangeRed */
-    border-color: #FF4500 !important;
+    border-color: orange!important;
 }
 
 .btn-secondary {
-    background-color: #6A5ACD !important;
+    background-color: #ff33ff !important;
     /* SlateBlue */
-    border-color: #6A5ACD !important;
+    border-color: green!important;
 }
 
 .btn-danger {
-    background-color: #DC143C !important;
+    background-color: blue !important;
     /* Crimson */
-    border-color: #DC143C !important;
+    border-color:indigo!important;
 }
 
 .btn-success {
-    background-color: #32CD32 !important;
+    background-color:violet !important;
     /* LimeGreen */
-    border-color: #32CD32 !important;
+    border-color: #black !important;
 }
 
 .text-dark {
-    color: rgb(188, 215, 55) !important;
+    color: brown !important;
     /* Black */
 }
+
+.text-dark {color: white;}
