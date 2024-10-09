@@ -33,8 +33,11 @@ console.log("Strict Comparison (num1 === num2):", strictComparison); // false, b
 
 // Example of an if/else condition using a comparison
 if (num1 === 10) {
-  console.log("num1 is exactly equal to 10 (strict comparison)."); // This block will run
-} else {
+  console.log("num1 is exactly equal to 10 ."); // This block will run
+} 
+else if (num1 === 10) {
+  console.log("num1 is exactly equal to 10.(strict comparison)"); // This block will run
+}  else {
   console.log("num1 is not exactly equal to 10.");
 }
 
