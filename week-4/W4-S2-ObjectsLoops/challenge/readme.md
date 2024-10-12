@@ -60,6 +60,6 @@ So that I can manipulate and handle text-based data effectively in my applicatio
 
 - [MDN Web Docs - JavaScript String Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)  
   Comprehensive documentation for JavaScript string methods, including detailed explanations, syntax, and examples of common methods such as `split()`, `includes()`, `replace()`, and more.
-
-- [W3Schools - JavaScript String Methods](https://www.w3schools.com/js/js_string_methods.asp)  
+https://www.w3schools.com/js/js_string_methods.asp
+- [W3Schools - JavaScript String Methods]()  
   A beginner-friendly guide to JavaScript string methods. It provides quick explanations and examples for methods like `substring()`, `toUpperCase()`, `toLowerCase()`, and more.
