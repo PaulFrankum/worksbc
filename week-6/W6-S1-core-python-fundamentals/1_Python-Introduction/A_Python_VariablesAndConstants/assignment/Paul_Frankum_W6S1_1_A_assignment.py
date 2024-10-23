@@ -1,25 +1,47 @@
 # Start writing code with comments form here
+#varibles can store different data types string interger float(number with decimals) and boolean ie 1 or 0 or true orfalse
 
-# Const Pi to 8 places float and immutable 
-PI = 3.1415927 # Decimal numbers
-print("Pi to 8 Places ",PI)
+# string a collect of numbers or letter (charaters) examples
+name = "Paul"
+first_school = "Merton Infants"
+print (name, "'s first school was ", first_school)
 
-# interger and immutable
-year_of_birth = 1970
-print("My year of Birth is ",year_of_birth)
+# Integer are whole number variables
+year_of_birth=1970
+current_year=2024
+print(name, "is ",current_year-year_of_birth," years old")
 
-# boolean mutable
-happy = True 
-print(" I am Happy with this course ", happy)
+# float point are variable with decimal point
+a = 13.7
+b = 5.4
+c = 8.3
+print("this some show the fault with the way float point numbers work", a-b-c)
+print("should show zero but does not")
 
-#  string imutable
-my_name = "Paul Matthew Frankum" 
-print(" My full name is ", my_name)
+# boolean variable are binary yes/no 0/1 true/false +5v 0v as shown in low level
 
-# interger and mutable
-age=54
-print(" my age is ",age)
+are_you_happy = True
+print("is this statement true. The instructor on skill bootcamp are good instructors?", are_you_happy)
 
-# Mutable example with a list
-cars = ["ford", "nissan", "land rover"]
-print("Original List:", cars)
+# constants in python are shown by capitalising the varible name and do not change
+drinking_age =18
+speed_of_sound = 343
+print ("you have to be ", drinking_age, "or over to drink in alcohol the UK")
+print ("Sound travels at ", speed_of_sound)
+
+# Mutable data can change after there are created vs Immutable data type can't change after creation
+year_of_birth=1970
+drinking_age =18
+speed_of_sound = 343
+#as shown above
+
+# tuples Lists more detail in exercise 3
+prime_numbers = (2,3,5,7,13,17,19,23)
+prime_numbers2 = (29,31,37,41,43,47)
+prime_listadded = prime_numbers + prime_numbers2
+print(" prime numbers are",prime_numbers,"next in row are", prime_numbers2)
+print("prime number upto fifty are ",prime_listadded)
+
+
+
+
