@@ -2,6 +2,7 @@ const API_KEY = "f23ee9deb4e1a7450f3157c44ed020e1";
 
 document.getElementById("getWeather").addEventListener("click", function () {
   const city = document.getElementById("city").value;
+  const API_KEY = "07f50367c193f67fe52e63f2f59c2936"
 
   if (city) {
     // First, get the latitude and longitude for the city
@@ -12,7 +13,10 @@ document.getElementById("getWeather").addEventListener("click", function () {
       .then((data) => {
         if (data.length > 0) {
           //TODO: get the latitude and longitude for the city
+          const lat = (data[0].lat)
+          const lon = (data[0].lon)
           //TODO: Call getWeather API with latitude and longitude
+          getWeather(lat, lon)
         } else {
           displayError("City not found");
         }
@@ -31,9 +35,11 @@ function getWeather(lat, lon) {
     .then((response) => response.json())
     .then((data) => {
       //TODO: get the main, weather, and name from the data
-      // const name = ???
-      // const temperature = ???
-      // const description = ???
+      console.log(data)
+      const name = data.name
+      const temperature = data.main.temp
+      const description = data.weather[0].description
+
       displayWeather(name, temperature, description);
     })
     .catch((error) => displayError("Error fetching weather data."));
@@ -44,10 +50,12 @@ function displayWeather(city, temperature, description) {
   const weatherResult = document.getElementById("weatherResult");
 
   //TODO: display the city, temperature, and description in the weatherResult element
-}
+  weatherResult.innerHTML = "the weather in " +city + " will be a temperature of " + temperature +" and descrition of weather is "+ description
+  
 
 // Function to display error messages
 function displayError(message) {
   const weatherResult = document.getElementById("weatherResult");
   weatherResult.innerHTML = `<p>${message}</p>`;
+}
 }
