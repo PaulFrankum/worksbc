@@ -1,16 +1,16 @@
 # create nest dictionary name, age, and email
 my_dict = {
-  "person1" :{
+  "person" :{
     "name": "Paul Frankum",
     "age": 54,
     "email": "paul_frankum@msn.com"
   },
-  "person2": {
+  "person": {
     "name": "Tony Frankum",
     "age": 52,
     "email": "frankum@gmail"  
 },
-  "person3":{
+  "person":{
     "name": "Jane Frankum",
     "age": 79,
     "email": "jane.frankum8@gmail.com"
@@ -18,17 +18,23 @@ my_dict = {
 }
 
 # add unquie id use loop
-# y=0
-# for x, obj in my_dict.items("person"):
-    # y= y + 1
-    # my_dict.update({"uniqueID": y})
-
-# print(my_dict)  
+z=0
+new_dict = {}
 for x, obj in my_dict.items():
   print(x)
 
   for y in obj:
-    print(y + ':', obj[y])  
+    z=z+1
+    my_dict.update({"ID": z})
+    print(my_dict)
+
+
+# print(my_dict)  
+# for x, obj in my_dict.items():
+  # print(x)
+
+#  for y in obj:
+# print(y + ':', obj[y])  
 
 # create second dictionary and merge with first
 my_dict2 = {
@@ -52,7 +58,7 @@ my_dict2 = {
   }
 }
 
-my_dict = my_dict + my_dict2
+# my_dict = my_dict + my_dict2
 print(my_dict)
 
 # conditional merge say on age above 18
