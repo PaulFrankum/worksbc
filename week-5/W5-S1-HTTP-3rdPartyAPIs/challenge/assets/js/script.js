@@ -50,7 +50,7 @@ function displayWeather(city, temperature, description) {
   const weatherResult = document.getElementById("weatherResult");
 
   //TODO: display the city, temperature, and description in the weatherResult element
-  weatherResult.innerHTML = "the weather in " +city + " will be a temperature of " + temperature +" and descrition of weather is "+ description
+  weatherResult.innerHTML = "the weather in " +city + " will be a temperature of " + temperature +" and description of weather is "+ description
   
 
 // Function to display error messages
