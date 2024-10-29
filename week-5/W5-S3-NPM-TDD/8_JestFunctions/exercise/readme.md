@@ -1,4 +1,5 @@
-# Passing Tests
+nom test
+m install# Passing Tests
 
 ## Challenge
 

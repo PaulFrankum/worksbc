@@ -1,0 +1,15 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "In this challenge, you will apply **Test Driven Development (TDD)** to the modularised calculator you built in the previous session. The goal is to write a set of automated tests for each calculator function (add, subtract, multiply, divide).",
+  "main": "cal.js",
+  "directories": {
+    "test": "test"
+  }, "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
