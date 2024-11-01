@@ -1,0 +1,14 @@
+import pytest
+
+
+@pytest.fixture
+def data_a():
+    return[1,2,3,4,5]
+
+@pytest.fixture
+def data_b():
+    return[6,7,8,9,10]
+
+
+def test_combined_data(data_a, data_b):
+        assert sum(data_a + data_b) ==55
