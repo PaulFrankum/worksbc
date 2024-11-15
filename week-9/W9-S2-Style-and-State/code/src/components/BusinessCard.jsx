@@ -3,11 +3,11 @@ import './BusinessCard.css';
 
 function BusinessCard({contact}) {
 
-  const {name, position, email, phone, website} = contact;
+  const {name, position, email, phone, website, photo} = contact;
   return (
     <div className="business-card">
       <div className="photo-placeholder">
-        {/* Placeholder for image */}
+        <img src={photo}/>
       </div>
       <div className="contact-info">
         <h2>{name}</h2>
