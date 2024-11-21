@@ -13,16 +13,16 @@ function Form() {
   const [showOther, setShowOther] = useState();
   
   const handleChange = (e) => {
-
     
     const { name, value } = e.target;
+
+    setShowOther((formData.hearOfUs === 'other'))
+
     setFormData({
       ...formData,
       [name]: value
     });
   
-    setShowOther((formData.hearOfUs === 'other'))
- 
   };
 
   const handleSubmit = (e) => {
@@ -79,7 +79,7 @@ function Form() {
           </label>
         </div>
         { showOther &&
-        <div>
+        <div className='form-group'>
           <label>
             Source of Other:
             <input
